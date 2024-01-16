@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services Page</title>
+    <!-- <link rel="stylesheet" href="services.css"> -->
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/services.css' %}">
+
+</head>
+<body>
+
+  <header class="header">
+    <div class="innerheader">
+        <div class="logo">
+            <!-- <img src="Logo.png" alt=""> -->
+        </div>
+        <H3> Digital India Smart Subsidy System </H3>
+        <nav>
+            <ul>
+
+                <li><a href="{% url 'homepage' %}">Home</a></li>
+                <li><a href="{% url 'Dash' %}">Schemes</a></li>
+                <li><a href="{% url 'aboutus' %}">About Us</a></li>
+                <li><a href="{% url 'services' %}">Services</a> </li>
+                <li><a href="{% url 'contactus' %}">Contact Us</a> </li>
+                <li><a href="{% url 'logout_user' %}">Logout User</a> </li>
+
+                <!-- <li><button type="submit">Register </button> </li> -->
+            </ul>
+        </nav>
+        <nav>
+            <ul>
+                <li> <a href="{% static 'css/Report.pdf' %}" download="Report.pdf"><button type="">Download Report </button> </a> </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+    
+      <section class="services-section">
+        <h2>OUR SERVICES</h2>
+        
+        <div class="service">
+          <img src="{% static 'css/service1.jpeg' %}" alt="Service 1">
+          <div class="content">
+          <h3>Smart Subsidy Distribution</h3>
+          <p>Revolutionizing subsidy distribution through innovative digital solutions to ensure a more efficient and transparent process.</p>
+        </div>
+      </div>
+      <hr>
+        <div class="service">
+          <div class="content">
+            <h3>Technology Integration</h3>
+            <p>Leveraging cutting-edge technology to streamline subsidy processes, reduce paperwork, and enhance overall efficiency.</p>
+          </div>
+          <img src="{% static 'css/service2.jpg' %}" alt="Service 2">
+      </div>
+      <hr>
+        <div class="service">
+          <img src="{% static 'css/service3.jpg' %}" alt="Service 3">
+          <div class="content">
+          <h3>Transparent Governance</h3>
+          <p>Contributing to transparent governance by implementing digital solutions that empower both the government and citizens.</p>
+        </div>
+      </div>
+      </section>
+      
+      <footer>
+        &copy; 2023 Digital India Smart Subsidy System. All rights reserved.
+      </footer>
+    
+      <footer>
+        &copy; 2023 Digital India Smart Subsidy System. All rights reserved.
+      </footer>
+
+</body>
+</html>

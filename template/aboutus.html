@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aboutus Page</title>
+    <!-- <link rel="stylesheet" href="aboutus.css"> -->
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/aboutus.css' %}">
+</head>
+<body>
+
+    <header class="header">
+        <div class="innerheader">
+            <div class="logo">
+                <!-- <img src="Logo.png" alt=""> -->
+            </div>
+            <H3> Digital India Smart Subsidy System </H3>
+            <nav>
+                <ul>
+    
+                    <li><a href="{% url 'homepage' %}">Home</a></li>
+                    <li><a href="{% url 'Dash' %}">Schemes</a></li>
+                    <li><a href="{% url 'aboutus' %}">About Us</a></li>
+                    <li><a href="{% url 'services' %}">Services</a> </li>
+                    <li><a href="{% url 'contactus' %}">Contact Us</a> </li>
+                    <li><a href="{% url 'logout_user' %}">Logout User</a> </li>
+    
+                    <!-- <li><button type="submit">Register </button> </li> -->
+                </ul>
+            </nav>
+            <nav>
+                <ul>
+                    <li> <a href="{% static 'css/Report.pdf' %}" download="Report.pdf"><button type="">Download Report </button> </a> </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section>
+        <div class="content">
+        <h2>ABOUT US</h2>
+        <p>Welcome to the Digital India Smart Subsidy System, where we are committed to revolutionizing the distribution of subsidies through innovative digital solutions. Our goal is to create an efficient and transparent system that benefits both the government and the citizens.</p>
+        
+        <p>At Digital India Smart Subsidy System, we leverage cutting-edge technology to streamline subsidy processes, reduce paperwork, and ensure that subsidies reach the intended beneficiaries promptly. Our team of dedicated professionals is passionate about contributing to the vision of a digitally empowered India.</p>
+        
+        <p>Join us on this journey towards a smarter and more inclusive subsidy system. Together, let's embrace the digital era and make a positive impact on the lives of millions across the nation.</p>
+    </div>
+    
+    </section>
+    
+      <footer>
+        &copy; 2023 Digital India Smart Subsidy System. All rights reserved.
+      </footer>
+
+</body>
+</html>

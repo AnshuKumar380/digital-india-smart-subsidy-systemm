@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <!-- <link rel="stylesheet" href="Register.css"> -->
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/Register.css' %}">
+ </head>
+<body>
+
+    <header>
+        <h1>Digital India Smart Subsidy System</h1>
+      </header>
+    <div class="outer">
+        <div class="outerbox">
+            <h2> REGISTER </h2>
+            <div class="Box1">
+            
+            <form action="" method="POST">
+                {% csrf_token %}
+                
+                <label for="username">   Username:
+                    <input type="text" id="username" name="username" required placeholder="username">
+            </label>
+                <label for="email"> Email: &nbsp; &nbsp; &nbsp; &nbsp;
+
+                <input type="email" id="email" name="email" required placeholder="Email" >
+            </label>
+            <label for="number">  Number:   &nbsp; &nbsp; 
+                <input type="text" id="Number" name="number" required placeholder="Number">
+            </label>
+            <label for="password"> Password:
+                <input type="password" id="password" name="password" required placeholder="Password">
+            </label>
+    
+                <button type="submit">Register</button>
+            </form>
+            <p>Already have an account? <a href="{% url 'loginpage' %}">Login here</a>.</p>
+            </div>
+        </div>
+    </div>
+        <footer>
+            &copy; 2023 Digital India Smart Subsidy System. All rights reserved.
+          </footer>
+</body>
+</html>

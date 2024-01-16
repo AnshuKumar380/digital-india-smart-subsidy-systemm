@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schemes Information</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/Schemesinfo.css' %}">
+</head>
+<body>
+  <header class="header">
+    <div class="innerheader">
+        <div class="logo">
+            <!-- <img src="Logo.png" alt=""> -->
+        </div>
+        <H3> Digital India Smart Subsidy System </H3>
+        <nav>
+            <ul>
+                <li><a href="{% url 'homepage' %}">Home</a></li>
+                <li><a href="{% url 'Dash' %}">Schemes</a></li>
+                <li><a href="{% url 'aboutus' %}">About Us</a></li>
+                <li><a href="{% url 'services' %}">Services</a> </li>
+                <li><a href="{% url 'contactus' %}">Contact Us</a> </li>
+                <li><a href="{% url 'logout_user' %}">Logout User</a> </li>
+
+                <!-- <li><button type="submit">Register </button> </li> -->
+            </ul>
+        </nav>
+        <nav>
+            <ul>
+                <li> <a href="{% static 'css/Report.pdf' %}" download="Report.pdf"><button type="">Download Report </button> </a> </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+  <div class="container">
+    <form action="" class="search"  method="get">
+        <input type="text" placeholder="Search for Schemes " name="searchname">
+        <button type="submit"> <img src="{% static 'css/search.png' %}" alt=""></button>
+    </form>
+</div>
+     <table class="content-table">
+        <thead>
+          <tr>
+            <th>Sno</th>
+            <th>Scheme Name</th>
+           <th>citizensip</th>
+           <th>State</th>
+           <th>age</th>
+           <th>gender</th>
+           <th>Caste</th>
+           <th>rationcard</th>
+           <th>employmentStatus</th>
+           <th>aadhaarnumber</th>
+           <th>link to Apply</th>
+          </tr>
+        </thead>
+        {% for d in dash %}
+        <tbody>
+          <tr>
+            <th>{{forloop.counter}}</th>
+            <td>{{d.schemename}}</td>
+            <td>{{d.citizensip}}</td>
+            <td>{{d.State}}</td>
+            <td>{{d.age}}</td>
+            <td>{{d.gender}}</td>
+            <td>{{d.caste}}</td>
+            <td>{{d.rationcard}}</td>
+            <td>{{d.employmentStatus}}</td>
+            <td>{{d.aadhaarnumber}}</td>
+            <td>
+              {% if d.link %}
+                <a href="{% url 'applicationform' %}" target="_blank">
+                <button id="bt">Apply For Scheme</button></a>
+              {% else %}
+                No Schemes Available
+              {% endif %}
+            </td>
+          </tr>
+          {% empty %}
+          NO Data Found
+          {% endfor %}
+        </tbody>
+      </table>
+</body>
+</html>

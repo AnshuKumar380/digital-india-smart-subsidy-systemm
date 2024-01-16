@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/Home.css' %}">
+</head>
+<body>
+
+    <header class="header">
+        <div class="innerheader">
+            <div class="logo">
+                <!-- <img src="Logo.png" alt=""> -->
+            </div>
+            <H3> Digital India Smart Subsidy System </H3>
+            <nav>
+                <ul>
+    
+                    <li><a href="{% url 'homepage' %}">Home</a></li>
+                    <li><a href="{% url 'Dash' %}">Schemes</a></li>
+                    <li><a href="{% url 'aboutus' %}">About Us</a></li>
+                    <li><a href="{% url 'services' %}">Services</a> </li>
+                    <li><a href="{% utl 'subsidy.html'}">claimed sub</a></li>
+                    <li><a href="{% url 'contactus' %}">Contact Us</a> </li>
+                    <li><a href="{% url 'logout_user' %}">Logout User</a> </li>
+    
+                    <!-- <li><button type="submit">Register </button> </li> -->
+                </ul>
+            </nav>
+            <nav>
+                <ul>
+                    <li> <a href="{% static 'css/Report.pdf' %}" download="Report.pdf"><button type="">Download Report </button> </a> </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="outerposter">
+
+        <div class="poster">
+
+        </div>
+        <div class="poster1">
+            <h2>SCHEMES:</h2> 
+            <!-- <ul> -->
+                <h4 id="abc"> <a href="{% url 'Dash' %}">Click Here For All Schemes</a></h4>
+                <h4> <a href="{% url 'scheme1' %}">Pradhan Mantri Vaya Vandana Scheme</a></h4>
+                <h4> <a href="https://www.nic.in/infographs_post/one-nation-one-ration-card/">One Nation One Ration Card Scheme</a></h4>
+                <h4> <a href="https://www.pmkmy.gov.in/">Pradhan Mantri Kisan Maan-Dhan Yojana</a></h4>
+                <h4> <a href="https://dbtindia.gov.in/sites/default/files/uploadfiles/Website%20Content%20for%20Mission%20Suraksha-V3.pdf">Mission COVID Suraksha</a></h4>
+                <h4> <a href="https://www.startupindia.gov.in/">Startup India</a></h4>
+                <h4> <a href="https://digitalindia.gov.in/">Digital India - High-Speed Internet</a></h4>
+                <h4> <a href="https://smartcities.gov.in/">Smart Cities Mission.</a></h4>
+                <h4> <a href="https://transformingindia.mygov.in/scheme/sukanya-samriddhi-yojana/">Sukanya Samriddhi Yojana</a></h4>
+            <!-- </ul> -->
+            <h2>Contact:</h2> 
+                <h4> <a href="">+91 9998887777</a></h4>
+                <h4> <a href="">DigitalindiaSSS@gmail.com</a></h4>
+        </div>
+    </div> 
+    <div class="Firstcontent">
+        <div class="Firstinnercontent">
+            <a href="{% url 'Dash' %}">
+            <div class="container">
+                All Schemes
+            </div>
+            </a>
+            <a href="{% url 'approval' %}">
+            <div class="container">
+                Application Details
+            </div>
+            </a>
+        </div>
+</div>
+    <div class="content">
+            <div class="innercontent">
+                <h1>GOVERNMENT SCHEMES</h1>
+                <br> 
+                <h2> <a href="{% url 'scheme1' %} ">1. Pradhan Mantri Vaya Vandana Scheme</a></h2>
+                <p>The Pradhan Mantri Vaya Vandana Scheme is a pioneering senior citizen welfare fund for Indian citizens over the age of 60. This pradhan mantri yojana for senior citizens is designed to provide financial security and assurance to the senior citizens of India.
+
+                    It offers an attractive interest rate of 8% per annum, and pensioners can choose their own payment frequency: monthly, quarterly, half-yearly, or annually.<BR> The monthly minimum and maximum pension caps are Rs. 3,000 and Rs. 10,000, respectively. With this scheme, the government ensures that senior citizens' futures are secure and that they have the opportunity to live a dignified life...</p>
+            </div>
+            <div class="contentposter1">
+                
+            </div>
+    
+            <div class="innercontent">
+                <h2> <a href="https://www.nic.in/infographs_post/one-nation-one-ration-card/">2. One Nation One Ration Card Scheme</a></h2>
+                <p>The Ministry of Consumer Affairs, Food and Public Distribution rolled out a pilot scheme titled, One Nation One Ration Card Scheme in four states on a pilot basis in 2019. 12 states were added on 1st January 2020. It was reported by the Central Government that about 86% beneficiaries under the NFSA were brought under the One Nation One Ration Card plan.
+            </div>
+            <div class="contentposter2">
+                
+            </div>
+
+            <div class="outerposterb">
+
+                <div class="posterb">
+                    <!-- <div class="posterimg">
+                        <img src="Homepage img.png" alt="">
+                    </div> -->
+        
+                </div>
+            </div>
+            
+            <div class="innercontent">
+                <h2> <a href="https://www.pmkmy.gov.in/">3. Pradhan Mantri Kisan Maan-Dhan Yojana (PM-KMY)</a></h2>
+                <p>The Pradhan Mantri Kisan Maan Dhan Yojana was launched at Ranchi, Jharkhand by Prime Minister Narendra Modi. This a Central Sector Scheme which is administered by the Cooperation & Farmers Welfare, Department of Agriculture, Ministry of Agriculture & Farmers’ Welfare, and the Government of India in partnership with Life Insurance Corporation of India (LIC).
+                    <BR>
+                    LIC is the Pension Fund Manager for PM Kisan Maan-Dhan Yojana that provides an assured monthly pension of Rs. 3000/- to all the small and marginal farmers </p>
+            </div>
+            <div class="contentposter3">
+                
+            </div>
+            <div class="innercontent">
+                <h2> <a href="https://dbtindia.gov.in/sites/default/files/uploadfiles/Website%20Content%20for%20Mission%20Suraksha-V3.pdf">4. Mission COVID Suraksha</a></h2>
+                <p>The Government of India launched the ‘Mission COVID Suraksha’, a development program for Indian candidates and researchers working on the COVID-19 vaccine. Under this mission, the Government would facilitate the clinical development, manufacturing and licensing of Indian vaccines to curb the virus attack. </p>
+            </div>
+            <div class="contentposter4">
+                
+            </div>
+
+            <div class="innercontent">
+                <h2> <a href="https://www.startupindia.gov.in/">5. Startup India</a></h2>
+                <p>Startup India was a campaign that was first addressed by the PM Narendra Modi on 15th August 2015 at Red Fort, New Delhi. This campaign was introduced under the Government of India as an initiative to develop over 75 startup support hubs in the country. The topic, ‘Startup India’ comes under (GS-II) </p>
+            </div>
+            <br>
+            <div class="contentposter5">
+
+            </div>
+            <br>
+            <div class="innercontent">
+                <h2> <a href="https://digitalindia.gov.in/">6. Digital India - High-Speed Internet Networks to Rural Areas</a></h2>
+                <p>The Indian Government launched the Digital India campaign to make government services available to citizens electronically by online infrastructure improvement and also by enhancing internet connectivity. It also aims to empower the country digitally in the domain of technology. Prime Minister Narendra Modi launched the campaign on 1st July 2015.</p>
+            </div>
+            <br>
+            <div class="contentposter6">
+                
+            </div>
+            
+            <div class="innercontent" >
+                <h2> <a href="https://smartcities.gov.in/">7. Smart Cities Mission.</a></h2>
+                <p>In cities, the pressure of population on land, infrastructure, and environment is massive and civic agencies are grappling with problems like clean air, mobility, sanitation, water, public safety, etc. Hence there is a need for developing a sustainable solution.
+                    <BR>
+                    The Smart Cities Mission was launched on June 25, 2015, with the key objective of promoting cities to provide core infrastructure, clean and sustainable environment and give a decent quality of life to their citizens through the application of ‘smart solutions’.</p>
+            </div>
+            <div class="contentposter7"> </div>
+            <div class="innercontent" id="a">
+                <h2> <a href="https://transformingindia.mygov.in/scheme/sukanya-samriddhi-yojana/">8. Sukanya Samriddhi Yojana.</a></h2>
+                <p>Sukanya Samriddhi Yojana is a small deposit scheme of the Government of India meant exclusively for a girl child and is launched as a part of Beti Bachao Beti Padhao Campaign. The scheme is meant to meet the education and marriage expenses of a girl child.</p>
+            </div>
+            <div class="contentposter8">
+                
+            </div>
+    </div>
+
+    
+  <footer>
+    &copy; 2023 Digital India Smart Subsidy System. All rights reserved.
+  </footer>
+
+</body>
+</html>

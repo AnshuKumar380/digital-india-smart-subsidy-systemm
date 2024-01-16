@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Information Page</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/Applicationform.css' %}">
+</head> 
+<body> 
+    <header class="header">
+        <div class="innerheader">
+            <div class="logo">
+                <!-- <img src="Logo.png" alt=""> -->
+            </div>
+            <H3> Digital India Smart Subsidy System </H3>
+            <nav>
+                <ul>
+    
+                    <li><a href="{% url 'homepage' %}">Home</a></li>
+                    <li><a href="{% url 'Dash' %}">Schemes</a></li>
+                    <li><a href="{% url 'aboutus' %}">About Us</a></li>
+                    <li><a href="{% url 'services' %}">Services</a> </li>
+                    <li><a href="{% url 'contactus' %}">Contact Us</a> </li>
+                    <li><a href="{% url 'logout_user' %}">Logout User</a> </li>
+    
+                    <!-- <li><button type="submit">Register </button> </li> -->
+                </ul>
+            </nav>
+            <nav>
+                <ul>
+                    <li> <a href="{% static 'css/Report.pdf' %}" download="Report.pdf"><button type="">Download Report </button> </a> </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+         <h4 class="note">Note:  Please fill all the information as accurately as possible. 
+         The information you provide  will assist in formulating a complete health profile.
+         All Answers are confidential.</h4>
+
+<div class="mainwrap">
+         <div class="wrapp">
+          <img src="{% static 'css/dr1.jpg' %}" alt="">
+         </div>
+   <div class="wrapper">
+    <div class="title">
+      Application Form
+    </div>
+    <form action="" method="POST">
+      {% csrf_token %}
+    <div class="form">
+      <div class="inputfield" >
+          <label>First Name</label>
+          <input type="text" name="first_name" class="input" required>
+      </div>
+      <div class="inputfield" >
+          <label>Last Name</label>
+          <input type="text" name="lastname" class="input">
+      </div>
+      <div class="inputfield" name="date_of_birth">
+         <label>Date Of Birth</label>
+         <input type="" name="date_of_birth" class="input" placeholder="YYYY-MM-DD"required>
+      </div>
+    <div class="inputfield" >
+        <label>citizensip</label>
+        <input type="text" name="citizensip" class="input" required>
+    </div>
+    <div class="inputfield" >
+        <label>State</label>
+        <input type="text" name="state" class="input" required>
+    </div>
+    <div class="inputfield" >
+        <label>Age</label>
+        <input type="number" name="age" class="input" min="0" required>
+    </div>
+    <div class="inputfield" >
+        <label>Gender</label>
+        <input type="text" name="gender" class="input" required>
+    </div>
+    <div class="inputfield" >
+        <label>Caste</label>
+        <input type="text" name="caste" class="input" required>
+    </div>
+    <div class="inputfield" >
+        <label>RationCard No</label>
+        <input type="text" name="rationcard" class="input" maxlength="12" required>
+    </div>
+    <div class="inputfield" >
+        <label>Employment Status</label>
+        <input type="text" name="employmentStatus" class="input" required>
+    </div>    
+    <div class="inputfield" >
+        <label>Aadhaar Number</label>
+        <input type="text" name="aadhaarnumber" class="input" required>
+    </div>
+    <div class="inputfield" >
+        <label>Scheme Name</label>
+        <input type="text" name="schemename" class="input" required>
+    </div>
+
+      <div class="inputfield">
+        <button class="btn">Submit</button>
+      </div>
+      
+    </div>
+  </form>
+</div>
+</div>   
+</body>  
+</html>

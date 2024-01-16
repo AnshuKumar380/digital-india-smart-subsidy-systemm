@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Approved Applications</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/Approval.css' %}">
+</head>
+<body>
+
+    <div class="header">
+        <H3> Digital India Smart Subsidy System </H3>
+    </div>
+    <div class="container" class="blurred">
+        <h1>APPLICATION DETAILS</h1>
+        <div class="details">
+            {% if approved_applicationform %}
+                <ul>
+                    {% for app in approved_applicationform %}
+                    <hr>
+                        <p> <span> Name : </span> {{ app.first_name }} {{ app.lastname }}  </p> 
+                        <p> <span>Date Of Birth :</span> {{ app.date_of_birth }} </p>
+                        <p> <span>citizensip :</span> {{ app.citizensip }} </p>
+                        <p> <span>Aadhaar No :</span> {{ app.aadhaarnumber }} </p>
+                        <p> <span>Scheme Name :</span> {{ app.schemename }}</p>
+                    <hr>
+                    {% endfor %}
+                </ul>
+                
+
+                <div class="sign">
+                    <div class="img">
+                        
+                    </div>
+                </div>
+                <div class="sign">
+                    <p>SEAL /  SIGN</p>
+                </div>
+                </div>
+
+        {% else %}
+            <p>No approved Applications available.</p>
+        {% endif %}
+
+        
+    </div>
+
+</body>
+</html>
