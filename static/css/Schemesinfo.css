@@ -1,0 +1,220 @@
+body {
+    font-family: 'Arial', sans-serif;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    /* background-image: url(Home\ bg.png); */
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  Body .header .innerheader h3{
+    text-align: left;
+    margin: 0px;
+    padding: 15px;
+    padding-left: 30px;
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    
+  }
+  .innerheader{
+    padding-top: 10px;
+    display: flex;
+    color: #f1a308;
+  }
+  
+  .header{
+    background-color: rgb(26, 20, 58);
+    width: 100%;
+    /* padding-top: 30px; */
+    height: 70px;
+    position: fixed;
+    margin-top: -50px;
+  }
+  
+  nav {
+    margin: 0px;
+    padding: 0px;
+    color: #fff;
+    text-align: center;
+    align-self: center;
+    padding-left: 100px;
+  }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: #f4f4f4 20px 20px;
+  }
+  nav ul li {
+  
+    display: inline-block;
+    font-weight: 400;
+    margin-right: 30px;
+    color: #ffffff;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #cacaca;
+    font-size: 15px;
+    padding: 3px 3px 3px 3px;
+  }
+  nav ul li a:hover {
+    color: white;
+    /* font-weight: bold; */
+    background-color: #2fa8ff;
+    padding: 0;
+    margin: 0;
+    padding: 3px 3px 3px 3px;
+    border-radius: 2px;
+    transition: ease-out 0.5s;
+    backdrop-filter: blur(5);
+  }
+  
+  .innerheader nav ul li button {
+    align-self: center;
+    font-weight: 700;
+    margin-top: 5px;
+    width: 200px;
+    font-size: 15px;
+    color: rgb(255, 203, 59)55, 255, 255;
+    padding: 10px;
+    border: rgb(123, 0, 255)0, 0;
+    border-style: outset;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  button:hover{
+    color: white;
+    background-color: #fe8c00;
+    transition: ease-out 0.5s;
+  }
+.content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 100%;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr {
+    background-color: #009879;
+    width: 100%;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+    padding: 12px 15px;
+    height: 50px;
+    /* width: 200px; */
+    border: solid #009879 2px;
+}
+thead{
+    text-transform: uppercase;
+    border: solid #ccfff5 2px;
+
+}
+tbody{
+    height: 100px;
+}
+#area{
+    width: 250px;
+
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.content-table tbody tr.active-row {
+    font-weight: bold;
+    color: #1b1d1d;
+}
+.container
+{
+    width: 100%;
+    margin-top: 50px;
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search{
+    width: 100%;
+    max-width: 700px;
+    background: rgba(15, 15, 15, 0.2);
+    display: flex;
+    align-items: center;
+    /* border-radius: 60px; */
+    /* padding: 10px 20px; */
+    backdrop-filter: blur(4px) saturate(180%);
+}
+
+.search input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px 20px;
+    font-size: 20px;
+    color:#009879;
+}
+::placeholder{
+    color:#009879;
+}
+
+.search button img{
+    width: 25px;
+}
+
+.search button{
+    border: 0;
+    /* border-radius: 50%; */
+    width: 80px;
+    height: 80px;
+    background:#009879;
+    cursor: pointer;
+}
+
+#bt {
+    align-self: center;
+    width: 150px;
+    margin-top: 20px;
+    margin-bottom: 12px;
+    margin-left: 25px;
+    font-weight: 500;
+    /* background-color: #43b4ff; */
+    color: #383838;
+    font-size: 15px;
+    padding: 10px;
+    border: solid #555555 2px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#bt:hover{
+    background-color: #0099ff;
+    border: solid #ffffff 2px;
+    color: #fff;
+    transition: ease-in-out 0.5s;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    transition: ease-in-out 0.5s;
+}
